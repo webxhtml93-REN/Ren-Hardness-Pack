@@ -1,0 +1,5 @@
+# Patched by Osamu_Ren
+Key,Source,Context,Changes,English,German
+hardSteelT1BlockGroupDesc,blocks,Block,New,"[T1] Hard Steel — 30,000 HP. Apply more Steel Polish to harden further."
+hardSteelT2BlockGroupDesc,blocks,Block,New,"[T2] Hard Steel — 60,000 HP. Apply more Steel Polish to harden further."
+hardSteelT3BlockGroupDesc,blocks,Block,New,"[T3] Hard Steel — 120,000 HP. Maximum hardness. Cannot be hardened further."

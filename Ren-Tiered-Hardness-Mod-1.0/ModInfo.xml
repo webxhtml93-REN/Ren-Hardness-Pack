@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Patched by Osamu_Ren -->
+<xml>
+	<Name value="Ren-Tiered-Hardness-Mod" />
+	<DisplayName value="Ren Tiered Hardness Mod" />
+	<Description value="Three tiers of Ultra-Hard Steel (T1 30k / T2 60k / T3 120k). Apply Steel Polish repeatedly to progress through tiers. Requires Ren-Hardness-Mod." />
+	<Author value="Nyce" />
+	<Version value="1.0" />
+	<Website value="https://nyce-network.com/" />
+</xml>
