@@ -3,7 +3,7 @@
 		<!-- Three tiers of Ultra-Hard Steel materials -->
 	<append xpath="/materials">
 
-		<!-- Tier 1: 45,000 MaxDamage -->
+		<!-- Tier 1: 60,000 MaxDamage -->
 		<material id="MhardSteelT1">
 			<property name="damage_category" value="metal" />
 			<property name="surface_category" value="metal" />
@@ -13,7 +13,7 @@
 			<property name="stability_glue" value="500" />
 			<property name="Mass" type="int" value="20" />
 			<property name="explosionresistance" value="6" />
-			<property name="MaxDamage" value="45000" />
+			<property name="MaxDamage" value="60000" />
 			<property name="Experience" value="30" />
 		</material>
 		<material id="MhardSteelT1_shapes">
@@ -25,11 +25,11 @@
 			<property name="stability_glue" value="500" />
 			<property name="Mass" type="int" value="20" />
 			<property name="explosionresistance" value="6" />
-			<property name="MaxDamage" value="45000" />
+			<property name="MaxDamage" value="60000" />
 			<property name="Experience" value="30" />
 		</material>
 
-		<!-- Tier 2: 60,000 MaxDamage -->
+		<!-- Tier 2: 90,000 MaxDamage -->
 		<material id="MhardSteelT2">
 			<property name="damage_category" value="metal" />
 			<property name="surface_category" value="metal" />
@@ -39,7 +39,7 @@
 			<property name="stability_glue" value="600" />
 			<property name="Mass" type="int" value="20" />
 			<property name="explosionresistance" value="8" />
-			<property name="MaxDamage" value="60000" />
+			<property name="MaxDamage" value="90000" />
 			<property name="Experience" value="45" />
 		</material>
 		<material id="MhardSteelT2_shapes">
@@ -51,7 +51,7 @@
 			<property name="stability_glue" value="600" />
 			<property name="Mass" type="int" value="20" />
 			<property name="explosionresistance" value="8" />
-			<property name="MaxDamage" value="60000" />
+			<property name="MaxDamage" value="90000" />
 			<property name="Experience" value="45" />
 		</material>
 

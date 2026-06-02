@@ -105,7 +105,7 @@ Write-Host "  Writing ModInfo.xml..."
 <xml>
 	<Name value="Ren-Hardness-Complete-Mod" />
 	<DisplayName value="Ren Hardness Complete Mod" />
-	<Description value="Adds Stainless Steel and three tiers of Ultra-Hard Steel. Apply Steel Polish to any hardened block to advance its tier - no workbench needed. Steel -> Stainless -> T1 (30k HP) -> T2 (60k) -> T3 (120k HP)." />
+	<Description value="Adds Stainless Steel and three tiers of Ultra-Hard Steel. Apply Steel Polish to any hardened block to advance its tier - no workbench needed. Steel -> Stainless (40k) -> T1 (60k) -> T2 (90k) -> T3 (120k HP)." />
 	<Author value="Nyce" />
 	<Version value="1.0" />
 	<Website value="https://nyce-network.com/" />
@@ -136,9 +136,9 @@ No new workbench crafting required beyond crafting the Polish itself.
 
 Upgrade chain:
   Vanilla Steel Block
-    -> Stainless Steel    (30,000 HP | +explosion resistance)
-    -> T1 Hard Steel      (45,000 HP | hardened grade)
-    -> T2 Hard Steel      (60,000 HP | double durability)
+    -> Stainless Steel    (40,000 HP | +explosion resistance)
+    -> T1 Hard Steel      (60,000 HP | hardened grade)
+    -> T2 Hard Steel      (90,000 HP | reinforced grade)
     -> T3 Hard Steel     (120,000 HP | maximum hardness)
 
 Each higher tier also increases explosion resistance and structural

@@ -3,7 +3,7 @@
 		<!-- Making Stainless worth the effort -->
 	<set xpath="/materials/material[@id='MstainlessSteel']/property[@name='stability_glue']/@value">500</set>
 	<set xpath="/materials/material[@id='MstainlessSteel']/property[@name='explosionresistance']/@value">6</set>
-	<set xpath="/materials/material[@id='MstainlessSteel']/property[@name='MaxDamage']/@value">30000</set>
+	<set xpath="/materials/material[@id='MstainlessSteel']/property[@name='MaxDamage']/@value">40000</set>
 	<append xpath="/materials">
 	<material id="Mstainlesssteel_shapes">
 		<property name="damage_category" value="metal" />
@@ -14,7 +14,7 @@
 		<property name="stability_glue" value="500" />
 		<property name="Mass" type="int" value="20" />
 		<property name="explosionresistance" value="6" />
-		<property name="MaxDamage" value="30000" />
+		<property name="MaxDamage" value="40000" />
 		<property name="Experience" value="30" />
 	</material>	
 	</append>
