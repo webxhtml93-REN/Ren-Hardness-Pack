@@ -4,12 +4,13 @@
 		<!-- Upgrade chain: stainlessSteel -> T1 -> T2 -> T3 via steelPolish (no new crafting) -->
 	<append xpath="/blocks">
 
-		<!-- ═══════════════════════════════ TIER 1 (30,000 HP) ═══════════════════════════════ -->
+		<!-- ═══════════════════════════════ TIER 1 (45,000 HP) ═══════════════════════════════ -->
 		<block name="hardSteelT1Master">
 			<property name="CreativeMode" value="None"/>
 			<property name="Group" value="Building,advBuilding"/>
 			<property name="DescriptionKey" value="hardSteelT1BlockGroupDesc"/>
 			<property name="Material" value="MhardSteelT1"/>
+			<property name="MaxDamage" value="45000"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="PassThroughDamage" value="false"/>
 			<property name="Texture" value="191"/>
@@ -33,6 +34,7 @@
 		<block name="hardSteelT1Shapes" shapes="All">
 			<property name="DescriptionKey" value="hardSteelT1BlockGroupDesc"/>
 			<property name="Material" value="MhardSteelT1_shapes"/>
+			<property name="MaxDamage" value="45000"/>
 			<property name="Shape" value="New"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="PassThroughDamage" value="false"/>
@@ -63,6 +65,7 @@
 			<property name="Group" value="Building,advBuilding"/>
 			<property name="DescriptionKey" value="hardSteelT2BlockGroupDesc"/>
 			<property name="Material" value="MhardSteelT2"/>
+			<property name="MaxDamage" value="60000"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="PassThroughDamage" value="false"/>
 			<property name="Texture" value="191"/>
@@ -86,6 +89,7 @@
 		<block name="hardSteelT2Shapes" shapes="All">
 			<property name="DescriptionKey" value="hardSteelT2BlockGroupDesc"/>
 			<property name="Material" value="MhardSteelT2_shapes"/>
+			<property name="MaxDamage" value="60000"/>
 			<property name="Shape" value="New"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="PassThroughDamage" value="false"/>
@@ -116,6 +120,7 @@
 			<property name="Group" value="Building,advBuilding"/>
 			<property name="DescriptionKey" value="hardSteelT3BlockGroupDesc"/>
 			<property name="Material" value="MhardSteelT3"/>
+			<property name="MaxDamage" value="120000"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="PassThroughDamage" value="false"/>
 			<property name="Texture" value="191"/>
@@ -133,6 +138,7 @@
 		<block name="hardSteelT3Shapes" shapes="All">
 			<property name="DescriptionKey" value="hardSteelT3BlockGroupDesc"/>
 			<property name="Material" value="MhardSteelT3_shapes"/>
+			<property name="MaxDamage" value="120000"/>
 			<property name="Shape" value="New"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="PassThroughDamage" value="false"/>

@@ -137,7 +137,7 @@ No new workbench crafting required beyond crafting the Polish itself.
 Upgrade chain:
   Vanilla Steel Block
     -> Stainless Steel    (30,000 HP | +explosion resistance)
-    -> T1 Hard Steel      (30,000 HP | hardened grade)
+    -> T1 Hard Steel      (45,000 HP | hardened grade)
     -> T2 Hard Steel      (60,000 HP | double durability)
     -> T3 Hard Steel     (120,000 HP | maximum hardness)
 
