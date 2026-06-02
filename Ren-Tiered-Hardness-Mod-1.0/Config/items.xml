@@ -1,8 +1,9 @@
-<fgstainlessmod>
+<renTieredHardnessMod>
 	<!-- Patched by Osamu_Ren -->
-		<!-- We need to be able to use tools to upgrade -->
-	<append xpath="/items/item/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,steelPolish</append>	
-		<!-- Add new items -->
+		<!-- Steel Polish: the single upgrade item used across the whole chain -->
+		<!-- Register it as an allowed upgrade tool item -->
+	<append xpath="/items/item/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,steelPolish</append>
+
 	<append xpath="/items">
 		<item name="steelPolish">
 			<property name="Extends" value="resourceLockPick"/>
@@ -18,9 +19,9 @@
 			<property name="EconomicValue" value="2"/>
 			<property name="EconomicBundleSize" value="1"/>
 			<property name="Group" value="Resources"/>
-		</item>	
-		
-    	<item name="steelPolishBundle">
+		</item>
+
+		<item name="steelPolishBundle">
 			<property name="Extends" value="resourceLockPickBundle"/>
 			<property name="CustomIcon" value="resourceOil"/>
 			<property name="CustomIconTint" value="FF0000" />
@@ -32,7 +33,6 @@
 				<property name="Create_item" value="steelPolish"/>
 				<property name="Create_item_count" value="50"/>
 			</property>
-			
-        </item>
+		</item>
 	</append>
-</fgstainlessmod>
+</renTieredHardnessMod>

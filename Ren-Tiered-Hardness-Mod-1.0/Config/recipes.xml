@@ -1,5 +1,6 @@
-<fgstainlessmod>
+<renTieredHardnessMod>
 	<!-- Patched by Osamu_Ren -->
+		<!-- Steel Polish recipe (workbench). Same cost regardless of which tier you apply it to. -->
 	<append xpath="/recipes">
 		<recipe name="steelPolish" count="200" craft_area="workbench" tags="workbenchCrafting" craft_time="60">
 			<ingredient name="resourceOil" count="10"/>
@@ -10,4 +11,4 @@
 			</effect_group>
 		</recipe>
 	</append>
-</fgstainlessmod>
+</renTieredHardnessMod>

@@ -1,14 +1,13 @@
 # Patched by Osamu_Ren
-# Tiered Hard Steel — upgrade chain via Steel Polish (no workbench crafting)
+# Ren Tiered Hardness Mod — standalone. Upgrade chain via Steel Polish (no base mod required).
 #
-# Full progression:
-#   steelMaster -> (steelPolish) -> stainlessSteelMaster [Ren-Hardness-Mod]
-#                               -> (steelPolish) -> hardSteelT1Master   [30,000 HP]
-#                                               -> (steelPolish) -> hardSteelT2Master   [60,000 HP]
+# Full progression (Master blocks; same applies to all Shapes variants):
+#   steelMaster -> (steelPolish) -> stainlessSteelMaster   [ 40,000 HP]
+#                               -> (steelPolish) -> hardSteelT1Master   [ 60,000 HP]
+#                                               -> (steelPolish) -> hardSteelT2Master   [ 90,000 HP]
 #                                                               -> (steelPolish) -> hardSteelT3Master   [120,000 HP]
-#
-# Same chain applies to all shape variants via hardSteelT1Shapes / T2Shapes / T3Shapes
 
+stainlessSteelMaster                 stainlessSteelShapes
 hardSteelT1Master                    hardSteelT1Shapes
 hardSteelT2Master                    hardSteelT2Shapes
 hardSteelT3Master                    hardSteelT3Shapes

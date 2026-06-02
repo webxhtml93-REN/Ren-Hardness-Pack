@@ -1,6 +1,0 @@
-# Patched by Osamu_Ren
-Key,Source,Context,Changes,English,German
-steelPolish,items,Item,New,Steel Polish
-steelPolishDesc,items,Item,New,"Polish used to upgrade Iron blocks to Stainless Steel.\nThis will greatly increase the durability of the block and make it shine.","Poliermittel, um Stahl noch härter zu machen!"
-steelPolishBundle,items,Item,New,Box of Steel Polish
-steelPolishBundleDesc,items,Item,New,"Box of Steel Polish that will produce bottles when opened."

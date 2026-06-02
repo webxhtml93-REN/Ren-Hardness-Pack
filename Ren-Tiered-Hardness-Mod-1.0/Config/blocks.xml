@@ -1,8 +1,63 @@
-<hardnessTieredMod>
+<renTieredHardnessMod>
 	<!-- Patched by Osamu_Ren -->
-		<!-- Three-Tier Ultra-Hard Steel Blocks -->
-		<!-- Upgrade chain: stainlessSteel -> T1 -> T2 -> T3 via steelPolish (no new crafting) -->
+		<!-- Standalone consolidated mod (base Ren-Hardness-Mod folded in) -->
+		<!-- Full chain via steelPolish: Steel -> Stainless (40k) -> T1 (60k) -> T2 (90k) -> T3 (120k) -->
 	<append xpath="/blocks">
+
+		<!-- ═══════════════════════════════ STAINLESS STEEL (40,000 HP) ═══════════════════════════════ -->
+		<block name="stainlessSteelMaster">
+			<property name="CreativeMode" value="None"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="DescriptionKey" value="steelBlockGroupDesc"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="MaxDamage" value="40000"/>
+			<property name="DisplayType" value="blockHardened"/>
+			<property name="PassThroughDamage" value="false"/>
+			<property name="Texture" value="191"/>
+			<property class="RepairItems">
+				<property name="steelPolish" value="1"/>
+			</property>
+			<property name="UpgradeSound" value="place_block_metal"/>
+			<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_building"/>
+			<property name="SortOrder1" value="40p0"/>
+			<property name="SortOrder2" value="0002"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="hardSteelT1Master"/>
+				<property name="Item" value="steelPolish"/>
+				<property name="ItemCount" value="2"/>
+				<property name="UpgradeHitCount" value="2"/>
+			</property>
+		</block>
+		<block name="stainlessSteelShapes" shapes="All">
+			<property name="DescriptionKey" value="steelBlockGroupDesc"/>
+			<property name="Material" value="Mstainlesssteel_shapes"/>
+			<property name="MaxDamage" value="40000"/>
+			<property name="Shape" value="New"/>
+			<property name="DisplayType" value="blockHardened"/>
+			<property name="PassThroughDamage" value="false"/>
+			<property name="Texture" value="191"/>
+			<property name="UiBackgroundTexture" value="191"/>
+			<property class="RepairItems">
+				<property name="steelPolish" value="5"/>
+			</property>
+			<property name="UpgradeSound" value="place_block_metal"/>
+			<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="EconomicValue" value="160"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="FilterTags" value="MC_Shapes"/>
+			<property name="SortOrder1" value="0010"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="hardSteelT1Shapes"/>
+				<property name="Item" value="steelPolish"/>
+				<property name="ItemCount" value="2"/>
+				<property name="UpgradeHitCount" value="2"/>
+			</property>
+		</block>
 
 		<!-- ═══════════════════════════════ TIER 1 (60,000 HP) ═══════════════════════════════ -->
 		<block name="hardSteelT1Master">
@@ -159,22 +214,22 @@
 
 	</append>
 
-	<!-- Hook T1 onto the end of the stainlessSteel upgrade chain (from Ren-Hardness-Mod) -->
-	<append xpath="/blocks/block[@name='stainlessSteelMaster']">
+	<!-- Entry point: hook vanilla Steel onto the Stainless step -->
+	<append xpath="/blocks/block[@name='steelMaster']">
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="hardSteelT1Master"/>
+			<property name="ToBlock" value="stainlessSteelMaster"/>
 			<property name="Item" value="steelPolish"/>
 			<property name="ItemCount" value="2"/>
 			<property name="UpgradeHitCount" value="2"/>
 		</property>
 	</append>
-	<append xpath="/blocks/block[@name='stainlessSteelShapes']">
+	<append xpath="/blocks/block[@name='steelShapes']">
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="hardSteelT1Shapes"/>
+			<property name="ToBlock" value="stainlessSteelShapes"/>
 			<property name="Item" value="steelPolish"/>
 			<property name="ItemCount" value="2"/>
 			<property name="UpgradeHitCount" value="2"/>
 		</property>
 	</append>
 
-</hardnessTieredMod>
+</renTieredHardnessMod>
