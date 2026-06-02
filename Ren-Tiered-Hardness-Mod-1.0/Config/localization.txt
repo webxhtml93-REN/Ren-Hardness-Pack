@@ -1,9 +1,8 @@
-# Patched by Osamu_Ren
-Key,Source,Context,Changes,English,German
-steelPolish,items,Item,New,Steel Polish
-steelPolishDesc,items,Item,New,"Polish used to harden steel blocks up the chain.\nApply it to a block to upgrade it to the next tier and greatly increase durability.","Poliermittel, um Stahl noch härter zu machen!"
-steelPolishBundle,items,Item,New,Box of Steel Polish
-steelPolishBundleDesc,items,Item,New,"Box of Steel Polish that will produce bottles when opened."
-hardSteelT1BlockGroupDesc,blocks,Block,New,"[T1] Hard Steel — 60,000 HP. Apply more Steel Polish to harden further."
-hardSteelT2BlockGroupDesc,blocks,Block,New,"[T2] Hard Steel — 90,000 HP. Apply more Steel Polish to harden further."
-hardSteelT3BlockGroupDesc,blocks,Block,New,"[T3] Hard Steel — 120,000 HP. Maximum hardness. Cannot be hardened further."
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+steelPolish,items,Item,,,Steel Polish
+steelPolishDesc,items,Item,,,"Polish used to harden steel blocks. Apply it to a block to upgrade it to the next tier and greatly increase durability."
+steelPolishBundle,items,Item,,,Box of Steel Polish
+steelPolishBundleDesc,items,Item,,,"Box of Steel Polish that will produce bottles when opened."
+hardSteelT1BlockGroupDesc,blocks,Block,,,"[T1] Hard Steel - 60,000 HP. Apply more Steel Polish to harden further."
+hardSteelT2BlockGroupDesc,blocks,Block,,,"[T2] Hard Steel - 90,000 HP. Apply more Steel Polish to harden further."
+hardSteelT3BlockGroupDesc,blocks,Block,,,"[T3] Hard Steel - 120,000 HP. Maximum hardness. Cannot be hardened further."
