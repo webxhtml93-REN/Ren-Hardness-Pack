@@ -29,7 +29,8 @@ The zip extracts to a single mod folder — no restructuring needed.
 
 - **Game build:** 7 Days to Die **V 2.6** (stable) — verified loading in-game with no errors.
 - **Type:** XML-only (no DLLs, no Harmony patches).
-- **Multiplayer:** adds blocks and items, so it must be on **both the server and every client**, and the server must run with **EAC disabled**.
+- **EAC:** Because there is no DLL, this mod loads with **EAC (anti-cheat) enabled** — you do **not** need to disable it. (Only DLL/code mods require EAC off.)
+- **Multiplayer:** install on **both the server and every client** so the block/item data matches on both sides. EAC can remain on for a server you control.
 
 ## Building from source
 

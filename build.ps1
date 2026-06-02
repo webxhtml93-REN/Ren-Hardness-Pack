@@ -69,10 +69,13 @@ unlocked via Advanced Engineering), then apply it with a construction tool
 2. Copy the `Ren-Tiered-Hardness-Mod` folder into `7 Days To Die/Mods/`.
 3. Start the game.
 
-## Multiplayer / EAC
+## EAC & multiplayer
 
-This mod adds blocks and items, so it must be installed on **both the server
-and every client**, and the server must run with **EAC disabled**.
+XML-only (no DLL), so it loads with **EAC (anti-cheat) enabled** -- you do not
+need to disable anti-cheat. Only DLL/code mods require EAC off.
+
+For multiplayer, install on **both the server and every client** so the
+block/item data matches on both sides; EAC can stay on for a server you control.
 '@ | Set-Content "$OutMod\README.md" -Encoding UTF8
 
 # ── Package as zip ────────────────────────────────────────────────────────────
