@@ -30,46 +30,50 @@ Write-Host "Building $ModName..."
 if (Test-Path $OutDir) { Remove-Item $OutDir -Recurse -Force }
 New-Item -ItemType Directory -Force $OutMod | Out-Null
 
-# ── Copy the mod, excluding any stray build artifacts ─────────────────────────
+# ── Copy the mod, excluding dev-only files and stray build artifacts ──────────
 Copy-Item "$Src\*" $OutMod -Recurse -Force
+# Dev reference docs / junk that end users do not need:
+foreach ($junk in @('BlockNameReferences.txt','bin','obj','.vs')) {
+    $p = Join-Path $OutMod $junk
+    if (Test-Path $p) { Remove-Item $p -Recurse -Force }
+}
+Get-ChildItem $OutMod -Recurse -Include *.pdb,*.bak,*.tmp,*~ -ErrorAction SilentlyContinue | Remove-Item -Force
 
-# ── Write ReadMe ──────────────────────────────────────────────────────────────
+# ── Write end-user README.md ──────────────────────────────────────────────────
 @'
-Ren Tiered Hardness Mod v1.4  (standalone)
-==========================================
-Author : Nyce
-Website: https://nyce-network.com/
+# Ren Tiered Hardness Mod (v1.4)
 
-INSTALLATION
-------------
-1. Extract Ren-Tiered-Hardness-Mod.zip
-2. Copy the Ren-Tiered-Hardness-Mod folder into:
-       7 Days To Die/Mods/
+Standalone 7 Days to Die mod for **V 2.6**. Apply **Steel Polish** to any
+hardened block to advance it one durability tier. No base mod, no escalating
+resource cost per tier.
+
+## Upgrade chain
+
+| Stage           |      HP |
+|-----------------|--------:|
+| Vanilla Steel   |   7,000 |
+| Stainless Steel |  40,000 |
+| T1 Hard Steel   |  60,000 |
+| T2 Hard Steel   |  90,000 |
+| T3 Hard Steel   | 120,000 |
+
+Higher tiers also raise explosion resistance and stability. T3 is the maximum.
+
+Craft Steel Polish at a workbench (10 Oil + 250 Forged Steel -> 200 Polish;
+unlocked via Advanced Engineering), then apply it with a construction tool
+(claw hammer / nailgun) to bump a block one tier.
+
+## Installation
+
+1. Extract `Ren-Tiered-Hardness-Mod.zip`.
+2. Copy the `Ren-Tiered-Hardness-Mod` folder into `7 Days To Die/Mods/`.
 3. Start the game.
 
-No base mod and no additional steps required.
+## Multiplayer / EAC
 
-WHAT THIS MOD ADDS
-------------------
-Craft Steel Polish at a workbench, then apply it to any hardened block to
-advance it one tier. Each step greatly increases durability:
-
-  Vanilla Steel Block
-    -> Stainless Steel    ( 40,000 HP)
-    -> T1 Hard Steel      ( 60,000 HP)
-    -> T2 Hard Steel      ( 90,000 HP)
-    -> T3 Hard Steel      (120,000 HP)
-
-Higher tiers also increase explosion resistance and structural stability.
-T3 is the maximum and cannot be hardened further.
-
-CRAFTING STEEL POLISH
----------------------
-Workbench required.
-  Ingredients : 10x Oil + 250x Forged Steel
-  Output      : 200x Steel Polish
-  Unlock      : Advanced Engineering
-'@ | Set-Content "$OutMod\ReadMe.txt" -Encoding UTF8
+This mod adds blocks and items, so it must be installed on **both the server
+and every client**, and the server must run with **EAC disabled**.
+'@ | Set-Content "$OutMod\README.md" -Encoding UTF8
 
 # ── Package as zip ────────────────────────────────────────────────────────────
 if (Test-Path $OutZip) { Remove-Item $OutZip -Force }
