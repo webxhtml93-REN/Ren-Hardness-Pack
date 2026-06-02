@@ -6,13 +6,13 @@
 # (This is now a single self-contained mod — no merge step required.)
 #
 # Usage:  .\build.ps1
-# Output: Release\Ren-Tiered-Hardness-Mod-1.0\   (drop into Mods/)
-#         Release\Ren-Tiered-Hardness-Mod-1.0.zip (distribute this)
+# Output: Release\Ren-Tiered-Hardness-Mod\   (drop into Mods/)
+#         Release\Ren-Tiered-Hardness-Mod.zip (distribute this)
 # =============================================================================
 
 $ErrorActionPreference = "Stop"
 
-$ModName   = "Ren-Tiered-Hardness-Mod-1.0"
+$ModName   = "Ren-Tiered-Hardness-Mod"
 $ScriptDir = $PSScriptRoot
 $Src       = "$ScriptDir\$ModName"
 $OutDir    = "$ScriptDir\Release"
@@ -35,15 +35,15 @@ Copy-Item "$Src\*" $OutMod -Recurse -Force
 
 # ── Write ReadMe ──────────────────────────────────────────────────────────────
 @'
-Ren Tiered Hardness Mod v1.0  (standalone)
+Ren Tiered Hardness Mod v1.4  (standalone)
 ==========================================
 Author : Nyce
 Website: https://nyce-network.com/
 
 INSTALLATION
 ------------
-1. Extract Ren-Tiered-Hardness-Mod-1.0.zip
-2. Copy the Ren-Tiered-Hardness-Mod-1.0 folder into:
+1. Extract Ren-Tiered-Hardness-Mod.zip
+2. Copy the Ren-Tiered-Hardness-Mod folder into:
        7 Days To Die/Mods/
 3. Start the game.
 
